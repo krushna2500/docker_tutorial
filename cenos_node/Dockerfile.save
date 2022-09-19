@@ -1,0 +1,7 @@
+FROM centos7
+
+RUN dnf update
+
+RUN dnf install openssh-server -y
+
+ENTEYPOINT service ssh restart
